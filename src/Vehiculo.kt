@@ -6,8 +6,6 @@ abstract class Vehiculo(val marca: String, val modelo: String, val capacidadComb
         return capacidadCombustible * 10
     }
 
-    fun mostrarInfo(){
-        println("$marca $modelo - Capacidad de combustible: $capacidadCombustible - Autonomia: ${calcularAutonomia()}")
-    }
+     abstract fun mostrarInfo()
 
 }
